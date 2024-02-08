@@ -70,9 +70,7 @@ body {
 }
 
 
-.hidden {
-    display: none;
-}
+
 
 #content {
     display: flex;
@@ -94,6 +92,10 @@ body {
     background-color: var(--white);
 }
 
+#content main .hidden {
+    display: none;
+}
+
 #content main h1 {
     margin-bottom: 2rem;
     font-size: 2rem;
@@ -104,26 +106,28 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    overflow-y: auto;
+}
+
+#content main .productSection {
+    height: 100%;
+    overflow-y: scroll;
 }
 
 #content main .cards .card {
     position: relative;
     height: 22rem;
-    width: calc((100vw - 270px - 6rem)/4);
+    width: calc((100vw - 270px - 7rem)/4);
     border-radius: 10px;
+    overflow: hidden;
     background: var(--white);
     border: 1px solid var(--blue-light);
     box-shadow: 4px 4px 16px rgba(1, 52, 94, 0.637)
 }
 
-#content main .cards .card .image {
-    height: 90%;
+#content main .cards .card img {
+    height: 300px;
+    width: 100%;
     border-radius: 10px;
-    background-image: url(../storage/images/rolexCosmographDaytona.avif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 #content main .cards .card .card__footer {
@@ -166,3 +170,84 @@ p {
     border-radius: 5px;
     background-color: var(--blue-light);
 }
+
+#content main .carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-right: 1rem;
+}
+
+#content main .carrito .carrito__card {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--blue-light);
+    box-shadow: 4px 4px 16px rgba(1, 52, 94, 0.637);
+    background-color: var(--blue-light);
+}
+
+#content .carrito__card 
+.carrito__card--start, 
+.carrito__card--middle, 
+.carrito__card--footer {
+    display: flex;
+    gap: 2rem;
+}
+
+#content .carrito__card h3,p {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+#content .carrito__card
+.info,
+.amount,
+.price,
+.product-name,
+.add-product
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#content .carrito__card .image {
+    width: 180px;
+    height: 150px;
+    object-fit: contain;
+}
+
+#content .carrito__card .image img {
+    height: 100%;
+    width: 100%;
+}
+
+#content .carrito__card .add-product i {
+    cursor: pointer;
+}
+
+#content .carrito__pay {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#content .carrito__pay .carrito__pay--footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 7rem;
+}
+
+#content .carrito__pay button {
+    padding: 2px 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--blue-light);
+    cursor: pointer;
+}
+
+
