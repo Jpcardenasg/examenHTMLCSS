@@ -6,103 +6,163 @@
     padding: 0;
     font-size: 16px;
     list-style: none;
+    text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
 
-header {
-    display: flex;
-    padding: 30px 22px;
-    background-color: #fff;
+:root {
+
+    --blue: #0a70ec;
+    --blue-light: #7eb2f1;
+    --white: #fff;
+    --black: #000;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 15% 1fr;
-    background: #B7D8FF;
-}
-
-aside {
+body {
     display: flex;
-    flex-direction: column;
-    width: 56px;
+    width: 100vw;
     height: 100vh;
-    gap: 2em;
-    padding: 20px 6px;
-    background-color: #fff;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    width: 270px;
+    gap: 7rem;
+    padding-left: 2.2rem;
     overflow-x: hidden;
+    background-color: var(--blue-light);
 }
 
-.aside.hidden {
-    max-width: 60px;
-}
-
-.icons {
-    display: flex;
-    gap: 8em;
-}
-
-.logo {
+#sidebar .brand {
     display: flex;
     align-items: center;
-    gap: 1em;
-    color: #0a70ec;
-    font-weight: 600;
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
-.logo :is(i,span) {
-    font-size: 1.4rem;
-}
-
-.main-container {
-    padding: 20px 16px;
-}
-
-.aside__main, .aside__tables {
+#sidebar .menu {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    width: 100%;
+    gap: 1.5rem;
+    margin-right: 2.2rem;
 }
 
-.aside__separator {
-    color: #818181;
-    margin-left: 20px;
+#sidebar .menu li {
+    padding: 0.6rem;
 }
 
-.button {
+#sidebar .menu li:hover {
+    border-radius: 0.625rem 0 0 0.625rem;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+#sidebar .menu li a {
     display: flex;
     align-items: center;
-    gap: 1.2em;
-    padding: 15px;
-    margin: 0 auto;
-    border-radius: 10px;
+    gap: 1rem;
+    color: var(--black);
 }
 
-.button:hover {
-    background-color: #0a70ec;
-}
 
-.right-arrow {
-    margin-left: auto
-}
-
-.elements__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
-}
-
-.list {
+.hidden {
     display: none;
 }
 
-.list__link {
-    display: block;
-    padding: 15px 0;
-    color: #000;
-    text-decoration: none;
+#content {
+    display: flex;
+    align-items: center;
+    width: calc(100vw - 270px);
+    height: 100vh;
+    padding-right: 1rem;
+    background-color: var(--blue-light);
 }
 
-.list__link:hover {
-    color: #0a70ec;
+#content main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 90%;
+    padding: 1.4rem 1rem;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+#content main h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#content main .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow-y: auto;
+}
+
+#content main .cards .card {
+    position: relative;
+    height: 22rem;
+    width: calc((100vw - 270px - 6rem)/4);
+    border-radius: 10px;
+    background: var(--white);
+    border: 1px solid var(--blue-light);
+    box-shadow: 4px 4px 16px rgba(1, 52, 94, 0.637)
+}
+
+#content main .cards .card .image {
+    height: 90%;
+    border-radius: 10px;
+    background-image: url(../storage/images/rolexCosmographDaytona.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#content main .cards .card .card__footer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+    padding: 0.8rem;
+    border-radius: 10px;
+    background: var(--white);
+    border: 1px solid var(--blue-light);
+}
+
+#content main .cards .card .card__footer .product-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+#content .card .card__footer .product-name h3,
+p {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+#content .card .price-add {
+    display: flex;
+    align-items: flex-end;
+}
+
+#content .card .price-add p {
+    font-size: 0.8rem;
+}
+
+#content .card .price-add button {
+    padding: 2px 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--blue-light);
 }

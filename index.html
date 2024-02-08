@@ -1,144 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/styles.css">
     <title>AdminSite</title>
-
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/styles.css">
-
 </head>
+
 <body>
 
-    <header>
-        <nav class="icons">
-            <div class="logo">
-                <i class='bx bxs-happy-alt' ></i>
-                <span>AdminSite</span>
-            </div>
-            <div class="menu-icon">
-                <i class='bx bx-menu' ></i>
-            </div>
-        </nav>
-    </header>
+    <section id="sidebar">
+        <a href="#" class="brand">CampusShop</a>
+        <ul class="menu" onclick="selectProduct(event)">
+            <li data-product="allProducts"><a href="#"><i class='bx bxs-store-alt'></i>Todos los productos</a></li>
+            <li data-product="watches"><a href="#"><i class='bx bxs-watch'></i>Relojes</a></li>
+            <li data-product="shirts"><a href="#"><i class='bx bxs-t-shirt'></i>Camisetas</a></li>
+            <li data-product="cars"><a href="#"><i class='bx bxs-car'></i>Carros</a></li>
+        </ul>
 
-    <main>
-        <aside class="aside">
-            <div class="home aside__item">
-                <div class="button">
-                    <i class='bx bxs-dashboard'></i>
-                    Dashboard
-                </div>
-            </div>
-            <div class="aside__main">
-                <span class="aside__separator">-</span>
-                <div class="elements aside__item">
-                    <div class="elements__button button">
-                        <i class='bx bxs-inbox' ></i>
-                        Elements
-                        <i class='bx bxs-chevron-right right-arrow'></i>
-                    </div>
-                    <div class="elements__content">
-                        <ul class="list">
-                            <li class="list__item"><a class="list__link" href="">Alert</a></li>
-                            <li class="list__item"><a class="list__link" href="">Badges</a></li>
-                            <li class="list__item"><a class="list__link" href="">Breadcrumbs</a></li>
-                            <li class="list__item"><a class="list__link" href="">Button</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="charts aside__item">
-                    <div class="charts__button button">
-                        <i class='bx bxs-chart'></i>
-                        Charts
-                    </div>
-                </div>
-                <div class="widgets aside__item">
-                    <div class="widgets__button button">
-                        <i class='bx bxs-widget'></i>
-                        Widgets
-                    </div>
-                </div>
-            </div>
-            <div class="aside__tables">
-                <span class="aside__separator">-</span>
-                <div class="tables aside__item">
-                    <div class="tables__button button">
-                        <i class='bx bx-table'></i>
-                        Tables
-                    </div>
-                </div>
-                <div class="forms aside__item">
-                    <div class="forms__button button">
-                        <i class='bx bxs-notepad'></i>
-                        Forms
-                        <i class='bx bxs-chevron-right right-arrow'></i>
-                    </div>
-                </div>
-            </div>
-        </aside>
-        <div class="main-container">
-            <h1>Dashboard</h1>
-            <div class="path"><span>Home</span> / Dashboard</div>
-            <section id="main-dashboard" class="main-dashboard">
+        <ul class="bottom-menu menu">
+            <li><a href="#"><i class='bx bxs-cart'></i>Carritos</a></li>
+        </ul>
+        <div class="camper">
+            <p>@ 2023 Camper</p>
+        </div>
+    </section>
+
+
+
+    <section id="content">
+
+        <main>
+
+            <section id="allProducts" class="productSection">
+                <h1 class="title">Todos los productos</h1>
                 <div class="cards">
                     <div class="card">
-                        <div class="number">
-                            <span>1500</span>
-                            <div class="card-icon"></div>
+                        <div class="image">
                         </div>
-                        <p>Traffic</p>
-                        <div class="percentage-bar">
-                            <progress value="4" max="10"></progress>
-                            <div class="percentage">40%</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="number">
-                            <span>1500</span>
-                            <div class="card-icon"></div>
-                        </div>
-                        <p>Traffic</p>
-                        <div class="percentage-bar">
-                            <progress value="4" max="10"></progress>
-                            <div class="percentage">40%</div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="number">
-                            <span>1500</span>
-                            <div class="card-icon"></div>
+                        <div class="image">
                         </div>
-                        <p>Traffic</p>
-                        <div class="percentage-bar">
-                            <progress value="4" max="10"></progress>
-                            <div class="percentage">40%</div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="number">
-                            <span>1500</span>
-                            <div class="card-icon"></div>
+                        <div class="image">
                         </div>
-                        <p>Traffic</p>
-                        <div class="percentage-bar">
-                            <progress value="4" max="10"></progress>
-                            <div class="percentage">40%</div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="sales-report" class="sales-report">
-                <article>
-                    <h2>Sales Report</h2>
-                    <p>Hola Mundo</p>
-                </article>
+
+            <section id="watches" class="productSection hidden">
+                <h1 class="title">Relojes</h1>
+                <div class="cards">
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-        </div>
-    </main>
 
-    <footer></footer>
+            <section id="shirts" class="productSection hidden">
+                <h1 class="title">Todos los productos</h1>
+                <div class="cards">
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <section id="cars" class="productSection hidden">
+                <h1 class="title">Todos los productos</h1>
+                <div class="cards">
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                        </div>
+                        <div class="card__footer">
+                            <div class="product-name">
+                                <h3>Reloj 01</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="price-add">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </section>
+
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
