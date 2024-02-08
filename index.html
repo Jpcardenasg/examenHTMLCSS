@@ -14,14 +14,14 @@
     <section id="sidebar">
         <a href="#" class="brand">CampusShop</a>
         <ul class="menu" onclick="selectProduct(event)">
-            <li data-product="allProducts"><a href="#"><i class='bx bxs-store-alt'></i>Todos los productos</a></li>
-            <li data-product="watches"><a href="#"><i class='bx bxs-watch'></i>Relojes</a></li>
-            <li data-product="shirts"><a href="#"><i class='bx bxs-t-shirt'></i>Camisetas</a></li>
-            <li data-product="cars"><a href="#"><i class='bx bxs-car'></i>Carros</a></li>
+            <li data-product="allProducts"><a data-product="allProducts" href="#"><i class='bx bxs-store-alt'></i>Todos los productos</a></li>
+            <li data-product="watches"><a data-product="watches" href="#"><i class='bx bxs-watch'></i>Relojes</a></li>
+            <li data-product="shirts"><a data-product="shirts" href="#"><i class='bx bxs-t-shirt'></i>Camisetas</a></li>
+            <li data-product="cars"><a data-product="cars" href="#"><i class='bx bxs-car'></i>Carros</a></li>
         </ul>
 
-        <ul class="bottom-menu menu">
-            <li><a href="#"><i class='bx bxs-cart'></i>Carritos</a></li>
+        <ul class="bottom-menu menu" onclick="selectProduct(event)">
+            <li data-product="cart"><a data-product="cart" href="#"><i class='bx bxs-cart'></i>Carritos</a></li>
         </ul>
         <div class="camper">
             <p>@ 2023 Camper</p>
@@ -39,11 +39,12 @@
                 <div class="cards">
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/relojes/rolex1908.avif" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Rolex 1908</h3>
+                                <p>$ 150.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -52,11 +53,12 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/carros/bugatti-divo-lady-bug-2020-1600-05-1614854784.jpg" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Bugatti Lady Bug</h3>
+                                <p>$ 1.700.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -65,11 +67,12 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/camisetas/azul.jpg" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Camiseta Azul</h3>
+                                <p>$ 1.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -78,11 +81,12 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/carros/lamborghini-veneno-roadster6-1579016169.jpg" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Lamborghini Veneno</h3>
+                                <p>$ 500.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -91,11 +95,12 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/camisetas/buso-negro.jpg" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Buso Negro</h3>
+                                <p>$ 1.200</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -104,11 +109,12 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/relojes/rolexSkyDweller.avif" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Rolex Sky Dweller</h3>
+                                <p>$ 150.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -117,11 +123,12 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/camisetas/blanca.jpg" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Camisa Blanca</h3>
+                                <p>$ 500</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -130,17 +137,19 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/carros/bugatti-la-voiture-noire-24-1622896335.jpg" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Bugatti La Voiture</h3>
+                                <p>$ 1.500.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </section>
 
@@ -149,11 +158,12 @@
                 <div class="cards">
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/relojes/rolex1908.avif" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Rolex 1908</h3>
+                                <p>$ 150.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -162,11 +172,12 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/relojes/rolexCosmographDaytona.avif" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Rolex Cosmograph</h3>
+                                <p>$ 170.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -175,11 +186,12 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/relojes/rolexGmtMaster-ii.avif" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Rolex GMT Master</h3>
+                                <p>$ 100.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -188,11 +200,12 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/relojes/rolexSkyDweller.avif" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Rolex Sky Dweller</h3>
+                                <p>$ 200.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -201,50 +214,12 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/relojes/jcReversoTributeDuoface.jpg" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
-                            </div>
-                            <div class="price-add">
-                                <button>Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-                        </div>
-                        <div class="card__footer">
-                            <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
-                            </div>
-                            <div class="price-add">
-                                <button>Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-                        </div>
-                        <div class="card__footer">
-                            <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
-                            </div>
-                            <div class="price-add">
-                                <button>Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-                        </div>
-                        <div class="card__footer">
-                            <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Reverso Tribute</h3>
+                                <p>$ 250.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -255,15 +230,16 @@
             </section>
 
             <section id="shirts" class="productSection hidden">
-                <h1 class="title">Todos los productos</h1>
+                <h1 class="title">Camisetas</h1>
                 <div class="cards">
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/camisetas/azul.jpg" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Camisa Azul</h3>
+                                <p>$ 1.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -272,11 +248,12 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/camisetas/blanca.jpg" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Camisa Blanca</h3>
+                                <p>$ 500</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -285,11 +262,12 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/camisetas/buso-negro.jpg" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Buso Negro</h3>
+                                <p>$ 1.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -298,11 +276,12 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/camisetas/deportiva.jpg" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Camisa Deportiva</h3>
+                                <p>$ 700</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -311,50 +290,12 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/camisetas/negra.jpg" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
-                            </div>
-                            <div class="price-add">
-                                <button>Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-                        </div>
-                        <div class="card__footer">
-                            <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
-                            </div>
-                            <div class="price-add">
-                                <button>Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-                        </div>
-                        <div class="card__footer">
-                            <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
-                            </div>
-                            <div class="price-add">
-                                <button>Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-                        </div>
-                        <div class="card__footer">
-                            <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Camisa Negra</h3>
+                                <p>$ 150.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -365,15 +306,16 @@
             </section>
 
             <section id="cars" class="productSection hidden">
-                <h1 class="title">Todos los productos</h1>
+                <h1 class="title">Carros</h1>
                 <div class="cards">
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/carros/bugatti-divo-lady-bug-2020-1600-05-1614854784.jpg" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Bugatti Lady Bug</h3>
+                                <p>$ 2.000.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -382,11 +324,12 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/carros/lamborghini-veneno-roadster6-1579016169.jpg" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Lamborghini Veneno</h3>
+                                <p>$ 1.700.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -395,11 +338,12 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/carros/maxresdefault.jpg" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Maserati</h3>
+                                <p>$ 1.100.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -408,11 +352,12 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/carros/bugatti-la-voiture-noire-24-1622896335.jpg" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Bugatti La Voiture</h3>
+                                <p>$ 1.500.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -421,50 +366,12 @@
                     </div>
                     <div class="card">
                         <div class="image">
+                            <img src="storage/images/carros/bugatti.jpg" alt="">
                         </div>
                         <div class="card__footer">
                             <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
-                            </div>
-                            <div class="price-add">
-                                <button>Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-                        </div>
-                        <div class="card__footer">
-                            <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
-                            </div>
-                            <div class="price-add">
-                                <button>Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-                        </div>
-                        <div class="card__footer">
-                            <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
-                            </div>
-                            <div class="price-add">
-                                <button>Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="image">
-                        </div>
-                        <div class="card__footer">
-                            <div class="product-name">
-                                <h3>Reloj 01</h3>
-                                <p>$ 1000</p>
+                                <h3>Bugatti</h3>
+                                <p>$ 1.400.000</p>
                             </div>
                             <div class="price-add">
                                 <button>Agregar</button>
@@ -472,6 +379,232 @@
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section id="cart" class="productSection hidden">
+                <h1 class="title">Carrito</h1>
+                <div class="carrito">
+                    <div class="carrito__card">
+                        <div class="carrito__card--start">
+                            <div class="image">
+                                <img src="storage/images/carros/lamborghini-veneno-roadster6-1579016169.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Nombre</h3>
+                                <p>Lamborghini Veneno</p>
+                            </div>
+                        </div>
+                        <div class="carrito__card--middle">
+                            <div class="amount">
+                                <h3>Cantidad</h3>
+                                <input type="number">
+                            </div>
+                            <div class="price">
+                                <h3>Precio</h3>
+                                <p>$ 500.000</p>
+                            </div>
+                        </div>
+                        <div class="carrito__card--footer">
+                            <div class="product-name">
+                                <h3>Subtotal</h3>
+                                <p>$ 500.000</p>
+                            </div>
+                            <div class="add-product" onclick="selectProduct(event)">
+                                <i data-product="cart-pay" class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrito__card">
+                        <div class="carrito__card--start">
+                            <div class="image">
+                                <img src="storage/images/relojes/rolexCosmographDaytona.avif" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Nombre</h3>
+                                <p>Rolex Cosmograph</p>
+                            </div>
+                        </div>
+                        <div class="carrito__card--middle">
+                            <div class="amount">
+                                <h3>Cantidad</h3>
+                                <input type="number">
+                            </div>
+                            <div class="price">
+                                <h3>Precio</h3>
+                                <p>$ 150.000</p>
+                            </div>
+                        </div>
+                        <div class="carrito__card--footer">
+                            <div class="product-name">
+                                <h3>Subtotal</h3>
+                                <p>$ 150.000</p>
+                            </div>
+                            <div class="add-product" onclick="selectProduct(event)">
+                                <i data-product="cart-pay" class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrito__card">
+                        <div class="carrito__card--start">
+                            <div class="image">
+                                <img src="storage/images/camisetas/azul.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Nombre</h3>
+                                <p>Camisa Azul</p>
+                            </div>
+                        </div>
+                        <div class="carrito__card--middle">
+                            <div class="amount">
+                                <h3>Cantidad</h3>
+                                <input type="number">
+                            </div>
+                            <div class="price">
+                                <h3>Precio</h3>
+                                <p>$ 1000</p>
+                            </div>
+                        </div>
+                        <div class="carrito__card--footer">
+                            <div class="product-name">
+                                <h3>Subtotal</h3>
+                                <p>$ 1000</p>
+                            </div>
+                            <div class="add-product" onclick="selectProduct(event)">
+                                <i data-product="cart-pay" class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrito__card">
+                        <div class="carrito__card--start">
+                            <div class="image">
+                                <img src="storage/images/carros/bugatti-divo-lady-bug-2020-1600-05-1614854784.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Nombre</h3>
+                                <p>Bugatti Lady Bug</p>
+                            </div>
+                        </div>
+                        <div class="carrito__card--middle">
+                            <div class="amount">
+                                <h3>Cantidad</h3>
+                                <input type="number">
+                            </div>
+                            <div class="price">
+                                <h3>Precio</h3>
+                                <p>$ 1.000.000</p>
+                            </div>
+                        </div>
+                        <div class="carrito__card--footer">
+                            <div class="product-name">
+                                <h3>Subtotal</h3>
+                                <p>$ 1.000.000</p>
+                            </div>
+                            <div class="add-product" onclick="selectProduct(event)">
+                                <i data-product="cart-pay" class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrito__card">
+                        <div class="carrito__card--start">
+                            <div class="image">
+                                <img src="storage/images/relojes/rolexGmtMaster-ii.avif" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Nombre</h3>
+                                <p>Reloj Gmt Master</p>
+                            </div>
+                        </div>
+                        <div class="carrito__card--middle">
+                            <div class="amount">
+                                <h3>Cantidad</h3>
+                                <input type="number">
+                            </div>
+                            <div class="price">
+                                <h3>Precio</h3>
+                                <p>$ 300.000</p>
+                            </div>
+                        </div>
+                        <div class="carrito__card--footer">
+                            <div class="product-name">
+                                <h3>Subtotal</h3>
+                                <p>$ 300.000</p>
+                            </div>
+                            <div class="add-product" onclick="selectProduct(event)">
+                                <i data-product="cart-pay" class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrito__pay">
+                        <div class="carrito__pay--start" onclick="selectProduct(event)">
+                            <button data-product="cart-empty">Vaciar Carrito</button>
+                        </div>
+                        <div class="carrito__pay--footer">
+                            <div class="product-name">
+                                <h3>Total</h3>
+                                <p>$ 3.000.000</p>
+                            </div>
+                            <button>Comprar Ahora</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section id="cart-empty" class="productSection hidden">
+                <h1 class="title">Carrito</h1>
+                <div class="carrito">
+                    <p>Tu carrito está vacío :c</p>
+                </div>
+            </section>
+
+            <section id="cart-pay" class="productSection hidden">
+                <h1 class="title">Carrito</h1>
+                <div class="carrito">
+                    <div class="carrito__card">
+                        <div class="carrito__card--start">
+                            <div class="image">
+                                <img src="storage/images/carros/lamborghini-veneno-roadster6-1579016169.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Nombre</h3>
+                                <p>Lamborghini Veneno</p>
+                            </div>
+                        </div>
+                        <div class="carrito__card--middle">
+                            <div class="amount">
+                                <h3>Cantidad</h3>
+                                <input type="number">
+                            </div>
+                            <div class="price">
+                                <h3>Precio</h3>
+                                <p>$ 500.000</p>
+                            </div>
+                        </div>
+                        <div class="carrito__card--footer">
+                            <div class="product-name">
+                                <h3>Subtotal</h3>
+                                <p>$ 500.000</p>
+                            </div>
+                            <div class="add-product" onclick="selectProduct(event)">
+                                <i data-product="cart-pay" class='bx bxs-plus-square'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrito__pay">
+                        <div class="carrito__pay--start" onclick="selectProduct(event)">
+                            <button data-product="cart-empty">Vaciar Carrito</button>
+                        </div>
+                        <div class="carrito__pay--footer">
+                            <div class="product-name">
+                                <h3>Total</h3>
+                                <p>$ 500.000</p>
+                            </div>
+                            <button>Comprar Ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+
             </section>
 
         </main>
